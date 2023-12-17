@@ -1,0 +1,246 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" href="css/datacat.css"><link rel="stylesheet" href="css/tables.css"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body style="background-color:white;font-family:sans-serif;padding-left:20px;padding-right:20px"><h2>METADATA</h2><h3>First 5 Rows</h3><table border="1" class="dataframe pure-table pure-table-bordered">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>TABLE</th>
+      <th>DESCRIPTION</th>
+      <th>COLUMN</th>
+      <th>TYPE</th>
+      <th>NULLABLE</th>
+      <th>COMMENTS</th>
+      <th>SOURCE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>CT_US_COVID_TESTS</td>
+      <td>US COVID-19 testing and mortality</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>CT_US_COVID_TESTS</td>
+      <td>ISO-3166-1 entity name</td>
+      <td>COUNTRY_REGION</td>
+      <td>VARCHAR(16777216)</td>
+      <td>False</td>
+      <td>United States only</td>
+      <td>CovidTracking API</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>CT_US_COVID_TESTS</td>
+      <td>ISO-3166-2 entity name (U.S. State)</td>
+      <td>PROVINCE_STATE</td>
+      <td>VARCHAR(16777216)</td>
+      <td>True</td>
+      <td>United States only</td>
+      <td>CovidTracking API</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>CT_US_COVID_TESTS</td>
+      <td>Date of data point</td>
+      <td>DATE</td>
+      <td>DATE</td>
+      <td>False</td>
+      <td>None</td>
+      <td>CovidTracking API</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>CT_US_COVID_TESTS</td>
+      <td>Positive cases on date of report</td>
+      <td>POSITIVE</td>
+      <td>NUMBER(38,0)</td>
+      <td>False</td>
+      <td>None</td>
+      <td>CovidTracking API</td>
+    </tr>
+  </tbody>
+</table><h3>Random 10 Rows</h3><table border="1" class="dataframe pure-table pure-table-bordered">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>TABLE</th>
+      <th>DESCRIPTION</th>
+      <th>COLUMN</th>
+      <th>TYPE</th>
+      <th>NULLABLE</th>
+      <th>COMMENTS</th>
+      <th>SOURCE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>252</th>
+      <td>SCS_BE_DETAILED_PROVINCE_CASE_COUNTS</td>
+      <td>Timestamp of last update</td>
+      <td>LAST_UPDATED_DATE</td>
+      <td>TIMESTAMP_NTZ(9)</td>
+      <td>False</td>
+      <td>None</td>
+      <td>Sciensano</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>HS_BULK_DATA</td>
+      <td>Healthcare provider classification</td>
+      <td>HEALTHCARE_PROVIDER_TYPE</td>
+      <td>NUMBER(38,0)</td>
+      <td>True</td>
+      <td>One of: primary_care, secondary_care, hospitals, emergency_and_urgent_care and health_centers. Hospitals include polyclinics. Primary care includes GPs, PCPs and non-hospital paediatricians. Health centers are defined as having an on-site non-medical speciality (e.g. pharmacy, physiotherapy) or multi-speciality care.</td>
+      <td>Healthsites.io bulk data</td>
+    </tr>
+    <tr>
+      <th>273</th>
+      <td>RKI_GER_DETAILED_DASHBOARD</td>
+      <td>Last update of data set</td>
+      <td>LAST_UPDATE_DATE</td>
+      <td>TIMESTAMP_NTZ(9)</td>
+      <td>True</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>157</th>
+      <td>KFF_US_ICU_BEDS</td>
+      <td>ISO-3166-1 entity name</td>
+      <td>COUNTRY_REGION</td>
+      <td>VARCHAR(16777216)</td>
+      <td>True</td>
+      <td>None</td>
+      <td>Henry J. Kaiser Family Foundation</td>
+    </tr>
+    <tr>
+      <th>155</th>
+      <td>DEMOGRAPHICS</td>
+      <td>Total female population for the FIPS code</td>
+      <td>TOTAL_FEMALE_POPULATION</td>
+      <td>VARCHAR(16777216)</td>
+      <td>True</td>
+      <td>None</td>
+      <td>US Census</td>
+    </tr>
+    <tr>
+      <th>105</th>
+      <td>PCM_DPS_COVID19_DETAILS</td>
+      <td>Date of data point</td>
+      <td>DATE</td>
+      <td>DATE</td>
+      <td>False</td>
+      <td>None</td>
+      <td>JHU CSSE COVID-19 data</td>
+    </tr>
+    <tr>
+      <th>212</th>
+      <td>HDX_ACAPS</td>
+      <td>Type of the source of information on the public health measure</td>
+      <td>SOURCE_TYPE</td>
+      <td>VARCHAR(16777216)</td>
+      <td>True</td>
+      <td>None</td>
+      <td>ACAPS via HDX</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>CT_US_COVID_TESTS</td>
+      <td>Patients hospitalised since previous date of report</td>
+      <td>HOSPITALIZEDCURRENTLYINCREASE</td>
+      <td>NUMBER(38,0)</td>
+      <td>True</td>
+      <td>None</td>
+      <td>CovidTracking API</td>
+    </tr>
+    <tr>
+      <th>279</th>
+      <td>IHME_COVID_19</td>
+      <td>COVID-19 beds needed on date, upper uncertainty bound</td>
+      <td>ALLBED_UPPER</td>
+      <td>FLOAT</td>
+      <td>True</td>
+      <td>None</td>
+      <td>IMHE</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>KFF_US_POLICY_ACTIONS</td>
+      <td>Whether the state has applied for a waiver under Section 1135 of the Social Security Act, allowing it to modify or suspend certain Medicare, Medicaid or CHIP requirements. Requests that have been submitted are logged as Submitted and approved requests are logged as Approved. NULL indicates no action.</td>
+      <td>SECTION_1135_WAIVER</td>
+      <td>VARCHAR(16777216)</td>
+      <td>True</td>
+      <td>None</td>
+      <td>Henry J. Kaiser Family Foundation</td>
+    </tr>
+  </tbody>
+</table><h3>Last 5 Rows</h3><table border="1" class="dataframe pure-table pure-table-bordered">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>TABLE</th>
+      <th>DESCRIPTION</th>
+      <th>COLUMN</th>
+      <th>TYPE</th>
+      <th>NULLABLE</th>
+      <th>COMMENTS</th>
+      <th>SOURCE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>312</th>
+      <td>METADATA</td>
+      <td>Table or column description</td>
+      <td>DESCRIPTION</td>
+      <td>VARCHAR(16777216)</td>
+      <td>True</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>313</th>
+      <td>METADATA</td>
+      <td>Column data type</td>
+      <td>TYPE</td>
+      <td>VARCHAR(16777216)</td>
+      <td>True</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>314</th>
+      <td>METADATA</td>
+      <td>Whether the table DDL accepts a NULL value for this column</td>
+      <td>NULLABLE</td>
+      <td>VARCHAR(16777216)</td>
+      <td>True</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>315</th>
+      <td>METADATA</td>
+      <td>Comments and annotations</td>
+      <td>COMMENTS</td>
+      <td>VARCHAR(16777216)</td>
+      <td>True</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>316</th>
+      <td>METADATA</td>
+      <td>Originating entity</td>
+      <td>SOURCE</td>
+      <td>VARCHAR(16777216)</td>
+      <td>True</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table><br><br><hr></body></html>

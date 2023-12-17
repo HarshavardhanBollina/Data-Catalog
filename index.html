@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="content/css/datacat.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>COVID-19 Data Catalog</title>
+
+  <style>
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin-left: 0px;
+      margin-right: 20px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 4px;
+    }
+
+    td {
+        vertical-align: top;
+    }
+
+    .header {
+      overflow: hidden;
+      background-color:#091D34;
+      position: fixed; /* Set the navbar to fixed position */
+      top: 0; /* Position the navbar at the top of the page */
+      height: 80px;
+      width: 100%; /* Full width */
+    }
+
+    .header img {
+      float: left;
+      width: 30px;
+      margin-top: 12px;
+      margin-left: 8px;
+    }
+
+    .header h1 {
+      position: relative;
+      top: 2px;
+      left: 12px;
+      color: #f1f1f1;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+
+    .header a {
+      margin-left: 52px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      color: white;
+    }
+
+    .sidenav {
+      margin-top:80px;
+      /* margin-left:10px; */
+      height: 100%;
+      width: 320px;
+      font-size: 18px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #d9d9d9;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      padding-top: 0px;
+      padding-left:14px;
+    }
+
+    /*
+    .sidenav p {
+      padding: 0px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #818181;
+      display: block;
+    }
+    */
+
+    .sidenav p:hover {
+      color: #f1f1f1;
+    }
+
+    .main {
+      margin-top:72px;
+      margin-left: 320px; /* Same as the width of the sidenav */
+      font-size: 18px; /* Increased text to enable scrolling */
+      padding-top: 0px;
+      padding-left:20px;
+      position: fixed;
+      width: 70%;
+      height:75%;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+    /* Style the tab */
+    .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    }
+
+    /* Style the buttons that are used to open the tab content */
+    .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 24px;
+    transition: 0.1s;
+    font-size: 14px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+    background-color: #ddd;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+    background-color: #ccc;
+    font-weight: bold;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+    display: none;
+    padding: 6px 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    height:100%;
+    }
+
+    /* Menu list of tables */
+    .tablemenu {
+    background-color: inherit;
+    cursor: pointer;
+    /* padding: 14px 16px; */
+    font-size: 12px;
+    }
+
+    .tablemenu:hover {
+    background-color: rgb(165, 172, 192);
+    }
+
+    .hr {
+    background-color: #8a8a8b;
+    /* border: 1px solid #000000; */
+    height: 4px;
+    margin: 4px 0;
+    /* width: 760px; */
+    }
+
+  </style>
+</head>
+<body>
+
+    <div class="header">
+      <img src="content/images/database-silver.png">
+      <h1>Data Catalog for COVID-19 Dataset from Snowflake & Starschema</h1>
+      <a target="_blank" href="about.html">About ...</a>
+    </div>
+
+    <div class="sidenav">
+        <h2>Tables</h2>
+        <div class="hr"> </div>
+          <p class="tablemenu" id="CT_US_COVID_TESTS" onclick="displayContent(this.id)">CT_US_COVID_TESTS</p>
+          <p class="tablemenu" id="DATABANK_DEMOGRAPHICS" onclick="displayContent(this.id)">DATABANK_DEMOGRAPHICS</p>
+          <p class="tablemenu" id="DEMOGRAPHICS" onclick="displayContent(this.id)">DEMOGRAPHICS</p>
+          <p class="tablemenu" id="GOOG_GLOBAL_MOBILITY_REPORT" onclick="displayContent(this.id)">GOOG_GLOBAL_MOBILITY_REPORT</p>
+          <p class="tablemenu" id="HDX_ACAPS" onclick="displayContent(this.id)">HDX_ACAPS</p>
+          <p class="tablemenu" id="HS_BULK_DATA" onclick="displayContent(this.id)">HS_BULK_DATA</p>
+          <p class="tablemenu" id="HUM_RESTRICTIONS_AIRLINE" onclick="displayContent(this.id)">HUM_RESTRICTIONS_AIRLINE</p>
+          <p class="tablemenu" id="HUM_RESTRICTIONS_COUNTRY" onclick="displayContent(this.id)">HUM_RESTRICTIONS_COUNTRY</p>
+          <p class="tablemenu" id="JHU_COVID_19" onclick="displayContent(this.id)">JHU_COVID_19</p>
+          <p class="tablemenu" id="JHU_DASHBOARD_COVID_19_GLOBAL" onclick="displayContent(this.id)">JHU_DASHBOARD_COVID_19_GLOBAL</p>
+          <p class="tablemenu" id="KFF_HCP_CAPACITY" onclick="displayContent(this.id)">KFF_HCP_CAPACITY</p>
+          <p class="tablemenu" id="KFF_US_ICU_BEDS" onclick="displayContent(this.id)">KFF_US_ICU_BEDS</p>
+          <p class="tablemenu" id="KFF_US_STATE_MITIGATIONS" onclick="displayContent(this.id)">KFF_US_STATE_MITIGATIONS</p>
+          <p class="tablemenu" id="METADATA" onclick="displayContent(this.id)">METADATA</p>
+          <p class="tablemenu" id="NYC_HEALTH_TESTS" onclick="displayContent(this.id)">NYC_HEALTH_TESTS</p>
+          <p class="tablemenu" id="NYT_US_COVID19" onclick="displayContent(this.id)">NYT_US_COVID19</p>
+          <p class="tablemenu" id="NYT_US_REOPEN_STATUS" onclick="displayContent(this.id)">NYT_US_REOPEN_STATUS</p>
+          <p class="tablemenu" id="PCM_DPS_COVID19" onclick="displayContent(this.id)">PCM_DPS_COVID19</p>
+          <p class="tablemenu" id="PCM_DPS_COVID19_DETAILS" onclick="displayContent(this.id)">PCM_DPS_COVID19_DETAILS</p>
+          <p class="tablemenu" id="RKI_GER_COVID19_DASHBOARD" onclick="displayContent(this.id)">RKI_GER_COVID19_DASHBOARD</p>
+          <p class="tablemenu" id="SCS_BE_DETAILED_HOSPITALISATIONS" onclick="displayContent(this.id)">SCS_BE_DETAILED_HOSPITALISATIONS</p>
+          <p class="tablemenu" id="SCS_BE_DETAILED_MORTALITY" onclick="displayContent(this.id)">SCS_BE_DETAILED_MORTALITY</p>
+          <p class="tablemenu" id="SCS_BE_DETAILED_PROVINCE_CASE_COUNTS" onclick="displayContent(this.id)">SCS_BE_DETAILED_PROVINCE_CASE_COUNTS</p>
+          <p class="tablemenu" id="SCS_BE_DETAILED_TESTS" onclick="displayContent(this.id)">SCS_BE_DETAILED_TESTS</p>
+          <p class="tablemenu" id="VH_CAN_DETAILED" onclick="displayContent(this.id)">VH_CAN_DETAILED</p>
+          <p class="tablemenu" id="WHO_SITUATION_REPORTS" onclick="displayContent(this.id)">WHO_SITUATION_REPORTS</p>
+    </div>
+
+<div class="main">
+    <h2>Table Details</h2>
+    <div class="hr"> </div>
+    <div class="tab">
+      <button class="tablinks" onclick="showTab(event, 'Overview')">Table Overview</button>
+      <button class="tablinks" onclick="showTab(event, 'Metadata')">Column Descriptions</button>
+      <button class="tablinks" onclick="showTab(event, 'Preview')">Data Preview</button>
+      <button class="tablinks" onclick="showTab(event, 'Profile')">Data Profile</button>
+    </div>
+    <!-- Tab content -->
+
+      <div id="Overview" class="tabcontent">
+        <iframe src="intro.html" name="ifrm_overview" height="100%" width="100%" title="Iframe Example"></iframe>
+      </div>
+
+      <div id="Metadata" class="tabcontent">
+          <iframe src="" name="ifrm_metadata" height="100%" width="100%" title="Iframe Example"></iframe>
+      </div>
+      
+      <div id="Preview" class="tabcontent">
+          <iframe src="" name="ifrm_data_preview" height="100%" width="100%" title="Iframe Example"></iframe>
+      </div>
+      
+      <div id="Profile" class="tabcontent">
+          <iframe src="" name="ifrm_data_profile" height="100%" width="100%" title="Iframe Example"></iframe>
+      </div>
+  </div>
+</div>
+
+<br>
+
+<script>
+  document.getElementById("Overview").style.display = "block";
+
+  function showTab(evt, tabName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+
+    // Display content in iframes for the selected table 
+    function displayContent(table_name) {
+
+      // Build URLs for the table content
+      var url_overview = "content/overview_" + table_name + ".html";
+      var url_metadata = "content/metadata_" + table_name + ".html";
+      var url_dprofile = "content/data_profile_" + table_name + ".html";
+      var url_dpreview = "content/data_preview_" + table_name + ".html";
+
+      window.frames['ifrm_overview'].location = url_overview;
+      // window.frames['ifrm_overview'].src = url_overview;
+      window.frames['ifrm_metadata'].location = url_metadata;
+      window.frames['ifrm_data_preview'].location = url_dpreview;
+      window.frames['ifrm_data_profile'].location = url_dprofile;
+
+      // Get all table TOC items and remove bold and highlighting
+      tocitems = document.getElementsByClassName("tablemenu");
+      for (i = 0; i < tocitems.length; i++) {
+        tocitems[i].style.fontWeight = "normal";
+        tocitems[i].style.backgroundColor = "inherit";
+      }
+
+      // Highlight the selected item
+      document.getElementById(table_name).style.fontWeight = "bold";
+      document.getElementById(table_name).style.backgroundColor = "silver";
+
+    }
+</script>
+</body>
+</html> 

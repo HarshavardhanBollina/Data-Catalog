@@ -1,0 +1,476 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" href="css/datacat.css"><link rel="stylesheet" href="css/tables.css"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body style="background-color:white;font-family:sans-serif;padding-left:20px;padding-right:20px"><h2>RKI_GER_COVID19_DASHBOARD</h2><h3>First 5 Rows</h3><table border="1" class="dataframe pure-table pure-table-bordered">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>DISTRICT_ID</th>
+      <th>COUNTY</th>
+      <th>STATE_ID</th>
+      <th>STATE</th>
+      <th>DISTRICT_TYPE</th>
+      <th>POPULATION</th>
+      <th>DEATH_RATE</th>
+      <th>CASES</th>
+      <th>DEATHS</th>
+      <th>CASES_PER_100K</th>
+      <th>CASES_PER_POPULATION</th>
+      <th>CASES7_PER_100K</th>
+      <th>LAST_UPDATE</th>
+      <th>ISO3166_1</th>
+      <th>ISO3166_2</th>
+      <th>LAST_UPDATE_DATE</th>
+      <th>LAST_REPORTED_FLAG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>01001</td>
+      <td>SK Flensburg</td>
+      <td>1</td>
+      <td>Schleswig-Holstein</td>
+      <td>District-free City</td>
+      <td>89504</td>
+      <td>5.263158</td>
+      <td>57</td>
+      <td>3</td>
+      <td>63.684305</td>
+      <td>0.063684</td>
+      <td>2.234537</td>
+      <td>2020-08-06</td>
+      <td>DE</td>
+      <td>SH</td>
+      <td>2020-08-07 00:07:11.289519</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>01002</td>
+      <td>SK Kiel</td>
+      <td>1</td>
+      <td>Schleswig-Holstein</td>
+      <td>District-free City</td>
+      <td>247548</td>
+      <td>2.915452</td>
+      <td>343</td>
+      <td>10</td>
+      <td>138.558987</td>
+      <td>0.138559</td>
+      <td>8.887165</td>
+      <td>2020-08-06</td>
+      <td>DE</td>
+      <td>SH</td>
+      <td>2020-08-07 00:07:11.289519</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>01003</td>
+      <td>SK Lübeck</td>
+      <td>1</td>
+      <td>Schleswig-Holstein</td>
+      <td>District-free City</td>
+      <td>217198</td>
+      <td>0.540541</td>
+      <td>185</td>
+      <td>1</td>
+      <td>85.175738</td>
+      <td>0.085176</td>
+      <td>1.381228</td>
+      <td>2020-08-06</td>
+      <td>DE</td>
+      <td>SH</td>
+      <td>2020-08-07 00:07:11.289519</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>01004</td>
+      <td>SK Neumünster</td>
+      <td>1</td>
+      <td>Schleswig-Holstein</td>
+      <td>District-free City</td>
+      <td>79487</td>
+      <td>3.571429</td>
+      <td>84</td>
+      <td>3</td>
+      <td>105.677658</td>
+      <td>0.105678</td>
+      <td>1.258067</td>
+      <td>2020-08-06</td>
+      <td>DE</td>
+      <td>SH</td>
+      <td>2020-08-07 00:07:11.289519</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>01051</td>
+      <td>LK Dithmarschen</td>
+      <td>1</td>
+      <td>Schleswig-Holstein</td>
+      <td>Rural District</td>
+      <td>133210</td>
+      <td>3.149606</td>
+      <td>127</td>
+      <td>4</td>
+      <td>95.338188</td>
+      <td>0.095338</td>
+      <td>8.257638</td>
+      <td>2020-08-06</td>
+      <td>DE</td>
+      <td>SH</td>
+      <td>2020-08-07 00:07:11.289519</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table><h3>Random 10 Rows</h3><table border="1" class="dataframe pure-table pure-table-bordered">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>DISTRICT_ID</th>
+      <th>COUNTY</th>
+      <th>STATE_ID</th>
+      <th>STATE</th>
+      <th>DISTRICT_TYPE</th>
+      <th>POPULATION</th>
+      <th>DEATH_RATE</th>
+      <th>CASES</th>
+      <th>DEATHS</th>
+      <th>CASES_PER_100K</th>
+      <th>CASES_PER_POPULATION</th>
+      <th>CASES7_PER_100K</th>
+      <th>LAST_UPDATE</th>
+      <th>ISO3166_1</th>
+      <th>ISO3166_2</th>
+      <th>LAST_UPDATE_DATE</th>
+      <th>LAST_REPORTED_FLAG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>220</th>
+      <td>08436</td>
+      <td>LK Ravensburg</td>
+      <td>8</td>
+      <td>Baden-Württemberg</td>
+      <td>Rural District</td>
+      <td>284285</td>
+      <td>1.138211</td>
+      <td>615</td>
+      <td>7</td>
+      <td>216.332202</td>
+      <td>0.216332</td>
+      <td>2.814077</td>
+      <td>2020-08-06</td>
+      <td>DE</td>
+      <td>BW</td>
+      <td>2020-08-07 00:07:11.289519</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>01053</td>
+      <td>LK Herzogtum Lauenburg</td>
+      <td>1</td>
+      <td>Schleswig-Holstein</td>
+      <td>Rural District</td>
+      <td>197264</td>
+      <td>6.315789</td>
+      <td>285</td>
+      <td>18</td>
+      <td>144.476438</td>
+      <td>0.144476</td>
+      <td>2.534674</td>
+      <td>2020-08-06</td>
+      <td>DE</td>
+      <td>SH</td>
+      <td>2020-08-07 00:07:11.289519</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>130</th>
+      <td>06531</td>
+      <td>LK Gießen</td>
+      <td>6</td>
+      <td>Hessen</td>
+      <td>Rural District</td>
+      <td>268876</td>
+      <td>1.388889</td>
+      <td>288</td>
+      <td>4</td>
+      <td>107.112572</td>
+      <td>0.107113</td>
+      <td>5.950698</td>
+      <td>2020-08-06</td>
+      <td>DE</td>
+      <td>HE</td>
+      <td>2020-08-07 00:07:11.289519</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>209</th>
+      <td>08327</td>
+      <td>LK Tuttlingen</td>
+      <td>8</td>
+      <td>Baden-Württemberg</td>
+      <td>Rural District</td>
+      <td>140152</td>
+      <td>4.571429</td>
+      <td>525</td>
+      <td>24</td>
+      <td>374.593299</td>
+      <td>0.374593</td>
+      <td>0.000000</td>
+      <td>2020-08-06</td>
+      <td>DE</td>
+      <td>BW</td>
+      <td>2020-08-07 00:07:11.289519</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>397</th>
+      <td>16075</td>
+      <td>LK Saale-Orla-Kreis</td>
+      <td>16</td>
+      <td>Thüringen</td>
+      <td>Rural District</td>
+      <td>80868</td>
+      <td>7.741935</td>
+      <td>155</td>
+      <td>12</td>
+      <td>191.670376</td>
+      <td>0.191670</td>
+      <td>4.946332</td>
+      <td>2020-08-06</td>
+      <td>DE</td>
+      <td>TH</td>
+      <td>2020-08-07 00:07:11.289519</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>114</th>
+      <td>05974</td>
+      <td>LK Soest</td>
+      <td>5</td>
+      <td>Nordrhein-Westfalen</td>
+      <td>Rural District</td>
+      <td>301902</td>
+      <td>1.843318</td>
+      <td>434</td>
+      <td>8</td>
+      <td>143.755258</td>
+      <td>0.143755</td>
+      <td>7.287133</td>
+      <td>2020-08-06</td>
+      <td>DE</td>
+      <td>NW</td>
+      <td>2020-08-07 00:07:11.289519</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>252</th>
+      <td>09275</td>
+      <td>LK Passau</td>
+      <td>9</td>
+      <td>Bayern</td>
+      <td>Rural District</td>
+      <td>192043</td>
+      <td>4.538341</td>
+      <td>639</td>
+      <td>29</td>
+      <td>332.737981</td>
+      <td>0.332738</td>
+      <td>3.645017</td>
+      <td>2020-08-06</td>
+      <td>DE</td>
+      <td>BY</td>
+      <td>2020-08-07 00:07:11.289519</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>03159</td>
+      <td>LK Göttingen</td>
+      <td>3</td>
+      <td>Niedersachsen</td>
+      <td>Rural District</td>
+      <td>328074</td>
+      <td>5.931559</td>
+      <td>1315</td>
+      <td>78</td>
+      <td>400.824204</td>
+      <td>0.400824</td>
+      <td>2.133665</td>
+      <td>2020-08-06</td>
+      <td>DE</td>
+      <td>NI</td>
+      <td>2020-08-07 00:07:11.289519</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>231</th>
+      <td>09177</td>
+      <td>LK Erding</td>
+      <td>9</td>
+      <td>Bayern</td>
+      <td>Rural District</td>
+      <td>137660</td>
+      <td>1.538462</td>
+      <td>715</td>
+      <td>11</td>
+      <td>519.395612</td>
+      <td>0.519396</td>
+      <td>9.443557</td>
+      <td>2020-08-06</td>
+      <td>DE</td>
+      <td>BY</td>
+      <td>2020-08-07 00:07:11.289519</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>274</th>
+      <td>09474</td>
+      <td>LK Forchheim</td>
+      <td>9</td>
+      <td>Bayern</td>
+      <td>Rural District</td>
+      <td>116099</td>
+      <td>1.860465</td>
+      <td>215</td>
+      <td>4</td>
+      <td>185.186780</td>
+      <td>0.185187</td>
+      <td>3.445335</td>
+      <td>2020-08-06</td>
+      <td>DE</td>
+      <td>BY</td>
+      <td>2020-08-07 00:07:11.289519</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table><h3>Last 5 Rows</h3><table border="1" class="dataframe pure-table pure-table-bordered">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>DISTRICT_ID</th>
+      <th>COUNTY</th>
+      <th>STATE_ID</th>
+      <th>STATE</th>
+      <th>DISTRICT_TYPE</th>
+      <th>POPULATION</th>
+      <th>DEATH_RATE</th>
+      <th>CASES</th>
+      <th>DEATHS</th>
+      <th>CASES_PER_100K</th>
+      <th>CASES_PER_POPULATION</th>
+      <th>CASES7_PER_100K</th>
+      <th>LAST_UPDATE</th>
+      <th>ISO3166_1</th>
+      <th>ISO3166_2</th>
+      <th>LAST_UPDATE_DATE</th>
+      <th>LAST_REPORTED_FLAG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>407</th>
+      <td>11005</td>
+      <td>SK Berlin Spandau</td>
+      <td>11</td>
+      <td>Berlin</td>
+      <td>None</td>
+      <td>243977</td>
+      <td>1.682243</td>
+      <td>535</td>
+      <td>9</td>
+      <td>219.282965</td>
+      <td>0.219283</td>
+      <td>9.427118</td>
+      <td>2020-08-06</td>
+      <td>DE</td>
+      <td>BE</td>
+      <td>2020-08-07 00:07:11.289519</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>408</th>
+      <td>11006</td>
+      <td>SK Berlin Steglitz-Zehlendorf</td>
+      <td>11</td>
+      <td>Berlin</td>
+      <td>None</td>
+      <td>308697</td>
+      <td>1.990812</td>
+      <td>653</td>
+      <td>13</td>
+      <td>211.534288</td>
+      <td>0.211534</td>
+      <td>5.183076</td>
+      <td>2020-08-06</td>
+      <td>DE</td>
+      <td>BE</td>
+      <td>2020-08-07 00:07:11.289519</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>409</th>
+      <td>11001</td>
+      <td>SK Berlin Mitte</td>
+      <td>11</td>
+      <td>Berlin</td>
+      <td>None</td>
+      <td>384172</td>
+      <td>1.137171</td>
+      <td>1407</td>
+      <td>16</td>
+      <td>366.242204</td>
+      <td>0.366242</td>
+      <td>14.837104</td>
+      <td>2020-08-06</td>
+      <td>DE</td>
+      <td>BE</td>
+      <td>2020-08-07 00:07:11.289519</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>410</th>
+      <td>11002</td>
+      <td>SK Berlin Friedrichshain-Kreuzberg</td>
+      <td>11</td>
+      <td>Berlin</td>
+      <td>None</td>
+      <td>289762</td>
+      <td>1.161290</td>
+      <td>775</td>
+      <td>9</td>
+      <td>267.460882</td>
+      <td>0.267461</td>
+      <td>11.733768</td>
+      <td>2020-08-06</td>
+      <td>DE</td>
+      <td>BE</td>
+      <td>2020-08-07 00:07:11.289519</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>411</th>
+      <td>11007</td>
+      <td>SK Berlin Tempelhof-Schöneberg</td>
+      <td>11</td>
+      <td>Berlin</td>
+      <td>None</td>
+      <td>351644</td>
+      <td>2.793296</td>
+      <td>895</td>
+      <td>25</td>
+      <td>254.518775</td>
+      <td>0.254519</td>
+      <td>6.540706</td>
+      <td>2020-08-06</td>
+      <td>DE</td>
+      <td>BE</td>
+      <td>2020-08-07 00:07:11.289519</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table><br><br><hr></body></html>

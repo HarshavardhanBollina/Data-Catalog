@@ -1,0 +1,407 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" href="css/datacat.css"><link rel="stylesheet" href="css/tables.css"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body style="background-color:white;font-family:sans-serif;padding-left:20px;padding-right:20px"><h2>WHO_SITUATION_REPORTS</h2><h3>First 5 Rows</h3><table border="1" class="dataframe pure-table pure-table-bordered">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>COUNTRY</th>
+      <th>TOTAL_CASES</th>
+      <th>CASES_NEW</th>
+      <th>DEATHS</th>
+      <th>DEATHS_NEW</th>
+      <th>TRANSMISSION_CLASSIFICATION</th>
+      <th>DAYS_SINCE_LAST_REPORTED_CASE</th>
+      <th>ISO3166_1</th>
+      <th>COUNTRY_REGION</th>
+      <th>DATE</th>
+      <th>SITUATION_REPORT_NAME</th>
+      <th>SITUATION_REPORT_URL</th>
+      <th>LAST_UPDATE_DATE</th>
+      <th>LAST_REPORTED_FLAG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>South Africa</td>
+      <td>529877</td>
+      <td>8559</td>
+      <td>9298</td>
+      <td>414</td>
+      <td>Community transmission</td>
+      <td>0</td>
+      <td>ZA</td>
+      <td>South Africa</td>
+      <td>2020-08-06</td>
+      <td>20200806-covid-19-sitrep-199</td>
+      <td>https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200806-covid-19-sitrep-199.pdf</td>
+      <td>2020-08-06 22:20:21.347331</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Nigeria</td>
+      <td>44890</td>
+      <td>457</td>
+      <td>927</td>
+      <td>17</td>
+      <td>Community transmission</td>
+      <td>0</td>
+      <td>NG</td>
+      <td>Nigeria</td>
+      <td>2020-08-06</td>
+      <td>20200806-covid-19-sitrep-199</td>
+      <td>https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200806-covid-19-sitrep-199.pdf</td>
+      <td>2020-08-06 22:20:21.347331</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Ghana</td>
+      <td>39075</td>
+      <td>1263</td>
+      <td>199</td>
+      <td>8</td>
+      <td>Community transmission</td>
+      <td>0</td>
+      <td>GH</td>
+      <td>Ghana</td>
+      <td>2020-08-06</td>
+      <td>20200806-covid-19-sitrep-199</td>
+      <td>https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200806-covid-19-sitrep-199.pdf</td>
+      <td>2020-08-06 22:20:21.347331</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Algeria</td>
+      <td>33055</td>
+      <td>551</td>
+      <td>1261</td>
+      <td>13</td>
+      <td>Community transmission</td>
+      <td>0</td>
+      <td>DZ</td>
+      <td>Algeria</td>
+      <td>2020-08-06</td>
+      <td>20200806-covid-19-sitrep-199</td>
+      <td>https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200806-covid-19-sitrep-199.pdf</td>
+      <td>2020-08-06 22:20:21.347331</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Kenya</td>
+      <td>23873</td>
+      <td>671</td>
+      <td>391</td>
+      <td>3</td>
+      <td>Community transmission</td>
+      <td>0</td>
+      <td>KE</td>
+      <td>Kenya</td>
+      <td>2020-08-06</td>
+      <td>20200806-covid-19-sitrep-199</td>
+      <td>https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200806-covid-19-sitrep-199.pdf</td>
+      <td>2020-08-06 22:20:21.347331</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table><h3>Random 10 Rows</h3><table border="1" class="dataframe pure-table pure-table-bordered">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>COUNTRY</th>
+      <th>TOTAL_CASES</th>
+      <th>CASES_NEW</th>
+      <th>DEATHS</th>
+      <th>DEATHS_NEW</th>
+      <th>TRANSMISSION_CLASSIFICATION</th>
+      <th>DAYS_SINCE_LAST_REPORTED_CASE</th>
+      <th>ISO3166_1</th>
+      <th>COUNTRY_REGION</th>
+      <th>DATE</th>
+      <th>SITUATION_REPORT_NAME</th>
+      <th>SITUATION_REPORT_URL</th>
+      <th>LAST_UPDATE_DATE</th>
+      <th>LAST_REPORTED_FLAG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>15472</th>
+      <td>New Zealand</td>
+      <td>1153</td>
+      <td>0</td>
+      <td>21</td>
+      <td>0</td>
+      <td>Clusters of cases</td>
+      <td>2</td>
+      <td>NZ</td>
+      <td>New Zealand</td>
+      <td>2020-05-21</td>
+      <td>20200521-covid-19-sitrep-122</td>
+      <td>https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200521-covid-19-sitrep-122.pdf</td>
+      <td>2020-08-06 22:20:21.347331</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>22282</th>
+      <td>Congo, The Democratic Republic of the</td>
+      <td>287</td>
+      <td>0</td>
+      <td>23</td>
+      <td>0</td>
+      <td>Clusters of cases</td>
+      <td>1</td>
+      <td>CD</td>
+      <td>Congo, The Democratic Republic of the</td>
+      <td>2020-04-18</td>
+      <td>20200418-sitrep-89-covid-19</td>
+      <td>https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200418-sitrep-89-covid-19.pdf</td>
+      <td>2020-08-06 22:20:21.347331</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>19971</th>
+      <td>Gambia</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>Sporadic cases</td>
+      <td>8</td>
+      <td>GM</td>
+      <td>Gambia</td>
+      <td>2020-04-29</td>
+      <td>20200429-sitrep-100-covid-19</td>
+      <td>https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200429-sitrep-100-covid-19.pdf</td>
+      <td>2020-08-06 22:20:21.347331</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>10000</th>
+      <td>Uganda</td>
+      <td>823</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Sporadic cases</td>
+      <td>3</td>
+      <td>UG</td>
+      <td>Uganda</td>
+      <td>2020-06-17</td>
+      <td>20200617-covid-19-sitrep-149</td>
+      <td>https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200617-covid-19-sitrep-149.pdf</td>
+      <td>2020-08-06 22:20:21.347331</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>11007</th>
+      <td>Northern Mariana Islands</td>
+      <td>30</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>Pending</td>
+      <td>3</td>
+      <td>MP</td>
+      <td>Northern Mariana Islands</td>
+      <td>2020-06-13</td>
+      <td>20200613-covid-19-sitrep-145</td>
+      <td>https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200613-covid-19-sitrep-145.pdf</td>
+      <td>2020-08-06 22:20:21.347331</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>28519</th>
+      <td>North Macedonia</td>
+      <td>19</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Local transmission</td>
+      <td>0</td>
+      <td>MK</td>
+      <td>North Macedonia</td>
+      <td>2020-03-17</td>
+      <td>20200317-sitrep-57-covid-19</td>
+      <td>https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200317-sitrep-57-covid-19.pdf</td>
+      <td>2020-08-06 22:20:21.347331</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>13845</th>
+      <td>Japan</td>
+      <td>16719</td>
+      <td>36</td>
+      <td>874</td>
+      <td>7</td>
+      <td>Clusters of cases</td>
+      <td>0</td>
+      <td>JP</td>
+      <td>Japan</td>
+      <td>2020-05-29</td>
+      <td>20200529-covid-19-sitrep-130</td>
+      <td>https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200529-covid-19-sitrep-130.pdf</td>
+      <td>2020-08-06 22:20:21.347331</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>26407</th>
+      <td>Republic</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Imported cases only</td>
+      <td>1</td>
+      <td>RU</td>
+      <td>Russian Federation</td>
+      <td>2020-03-29</td>
+      <td>20200329-sitrep-69-covid-19</td>
+      <td>https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200329-sitrep-69-covid-19.pdf</td>
+      <td>2020-08-06 22:20:21.347331</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>21671</th>
+      <td>Seychelles</td>
+      <td>11</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Sporadic cases</td>
+      <td>14</td>
+      <td>SC</td>
+      <td>Seychelles</td>
+      <td>2020-04-21</td>
+      <td>20200421-sitrep-92-covid-19</td>
+      <td>https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200421-sitrep-92-covid-19.pdf</td>
+      <td>2020-08-06 22:20:21.347331</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>11869</th>
+      <td>Guatemala</td>
+      <td>6792</td>
+      <td>307</td>
+      <td>230</td>
+      <td>14</td>
+      <td>Community transmission</td>
+      <td>0</td>
+      <td>GT</td>
+      <td>Guatemala</td>
+      <td>2020-06-08</td>
+      <td>20200608-covid-19-sitrep-140</td>
+      <td>https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200608-covid-19-sitrep-140.pdf</td>
+      <td>2020-08-06 22:20:21.347331</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table><h3>Last 5 Rows</h3><table border="1" class="dataframe pure-table pure-table-bordered">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>COUNTRY</th>
+      <th>TOTAL_CASES</th>
+      <th>CASES_NEW</th>
+      <th>DEATHS</th>
+      <th>DEATHS_NEW</th>
+      <th>TRANSMISSION_CLASSIFICATION</th>
+      <th>DAYS_SINCE_LAST_REPORTED_CASE</th>
+      <th>ISO3166_1</th>
+      <th>COUNTRY_REGION</th>
+      <th>DATE</th>
+      <th>SITUATION_REPORT_NAME</th>
+      <th>SITUATION_REPORT_URL</th>
+      <th>LAST_UPDATE_DATE</th>
+      <th>LAST_REPORTED_FLAG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>30070</th>
+      <td>Thailand</td>
+      <td>42</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Local transmission</td>
+      <td>2</td>
+      <td>TH</td>
+      <td>Thailand</td>
+      <td>2020-03-02</td>
+      <td>20200302-sitrep-42-covid-19</td>
+      <td>https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200302-sitrep-42-covid-19.pdf</td>
+      <td>2020-08-06 22:20:21.347331</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>30071</th>
+      <td>India</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Imported cases only</td>
+      <td>28</td>
+      <td>IN</td>
+      <td>India</td>
+      <td>2020-03-02</td>
+      <td>20200302-sitrep-42-covid-19</td>
+      <td>https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200302-sitrep-42-covid-19.pdf</td>
+      <td>2020-08-06 22:20:21.347331</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>30072</th>
+      <td>Indonesia</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Local transmission</td>
+      <td>0</td>
+      <td>ID</td>
+      <td>Indonesia</td>
+      <td>2020-03-02</td>
+      <td>20200302-sitrep-42-covid-19</td>
+      <td>https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200302-sitrep-42-covid-19.pdf</td>
+      <td>2020-08-06 22:20:21.347331</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>30073</th>
+      <td>Nepal</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Imported cases only</td>
+      <td>38</td>
+      <td>NP</td>
+      <td>Nepal</td>
+      <td>2020-03-02</td>
+      <td>20200302-sitrep-42-covid-19</td>
+      <td>https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200302-sitrep-42-covid-19.pdf</td>
+      <td>2020-08-06 22:20:21.347331</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>30074</th>
+      <td>Sri Lanka</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Imported cases only</td>
+      <td>35</td>
+      <td>LK</td>
+      <td>Sri Lanka</td>
+      <td>2020-03-02</td>
+      <td>20200302-sitrep-42-covid-19</td>
+      <td>https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200302-sitrep-42-covid-19.pdf</td>
+      <td>2020-08-06 22:20:21.347331</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table><br><br><hr></body></html>
