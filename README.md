@@ -1,6 +1,6 @@
-# covid19-data-catalog
+# Unified COVID-19 Data Catalog: Building a Masterpiece of Pandemic Insights
 
-This project tackles the chaos of scattered COVID-19 data like a master cataloger, meticulously organizing and standardizing information from countless sources. Its mission? To create a single, cohesive dataset that empowers researchers, analysts, and anyone curious about the pandemic with:
+### This project tackles the chaos of scattered COVID-19 data like a master cataloger, meticulously organizing and standardizing information from countless sources. Its mission? To create a single, cohesive dataset that empowers researchers, analysts, and anyone curious about the pandemic with:
 
 Universal Location IDs: No more geographic confusion, every area has a unique, clear identifier.
 Standardized Names & Codes: Kiss inconsistent place names and cryptic codes goodbye.
